@@ -1,0 +1,171 @@
+body {
+    background-color: #ECECEC;
+    font-family: "Rajdhani", sans-serif;
+}
+
+/* assegnazione font testi */
+.font-imp {
+    font-family: "Nova Square", sans-serif;
+}
+
+.font-imp-2 {
+    font-family: "Rajdhani", sans-serif;
+}
+
+.logo {
+    width: 115px;
+}
+
+/* assegnazione delle variabili */
+:root {
+    --prim-color: darkred;
+    --sec-color: #C67F7F;
+    --ter-color: rgb(236, 236, 236);
+}
+
+/* assegnazione colori testi */
+.tx-1 {
+    color: var(--prim-color);
+}
+
+.tx-2 {
+    color: var(--sec-color);
+}
+
+.tx-3 {
+    color: var(--ter-color);
+}
+
+/* assegnazione colore di sfondo */
+.bg-prim {
+    background-color: darkred;
+}
+
+.first-section {
+    background: linear-gradient(rgb(236, 236, 236), rgba(236, 236, 236, 0)), url(./media/mountains2.png), url(./media/switzerland-862870_1920.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.title {
+    font-size: 70px;
+    letter-spacing: 30px;
+    left: 50%;
+    top: 50%;
+    /* cercare questo comando */
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:767px) {
+    .title {
+        font-size: 50px;
+        letter-spacing: 10px;
+    }
+}
+
+nav ul li {
+    margin: 0px 40px;
+}
+
+@media screen and (max-width:767px) {
+    nav ul li {
+        margin: 0px 15px;
+    }
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.bg_grigino {
+    background-color: #ECECEC;
+}
+
+.testo {
+    width: 40%;
+    position: relative;
+}
+
+@media screen and (max-width:767px) {
+    .testo {
+        width: 70%;
+    }
+}
+
+/* virgolette */
+.testo::before {
+    position: absolute;
+    content: open-quote;
+    color: var(--prim-color);
+    font-size: 70px;
+    top: -50%;
+    left: -3%;
+}
+
+.testo::after {
+    position: absolute;
+    content: close-quote;
+    color: var(--prim-color);
+    font-size: 70px;
+    top: 30%;
+    right: 0%;
+}
+
+.icone {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.column {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space;
+    border-bottom: var(--prim-color) 2px solid;
+    width: 200px;
+    margin: 0px 20px;
+}
+
+.cerchio {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--prim-color);
+    background-color: white;
+    top: 95%;
+}
+
+.bottone {
+    width: 120px;
+    height: 30px;
+    border: 0;
+    margin-top: 35px;
+    text-align: center;
+    color: white;
+    background-color: var(--prim-color);
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 45%;
+}
+
+.cerchio2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--prim-color);
+    background-color: white;
+    left: -12px;
+    position: absolute;
+}
+
+.bordo_sx {
+    border-left: var(--prim-color) 2px solid;
+}
+
+
+.single {
+    bottom: 0px;
+    right: 0px;
+}
