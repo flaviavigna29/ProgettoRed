@@ -36,11 +36,31 @@ body {
     color: var(--ter-color);
 }
 
-/* assegnazione colore di sfondo */
-.bg-prim {
-    background-color: darkred;
+/* assegnazione background colore grigio */
+.bg_grigino {
+    background-color: #ECECEC;
 }
 
+.bg-rosso {
+    background-color: var(--prim-color);
+}
+
+/* CSS sezione Navbar */
+nav ul li {
+    margin: 0px 40px;
+}
+
+@media screen and (max-width:767px) {
+    nav ul li {
+        margin: 0px 15px;
+    }
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+/* Home page - Titolo e colore di sfondo */
 .first-section {
     background: linear-gradient(rgb(236, 236, 236), rgba(236, 236, 236, 0)), url(./media/mountains2.png), url(./media/switzerland-862870_1920.jpg);
     height: 90vh;
@@ -65,24 +85,7 @@ body {
     }
 }
 
-nav ul li {
-    margin: 0px 40px;
-}
-
-@media screen and (max-width:767px) {
-    nav ul li {
-        margin: 0px 15px;
-    }
-}
-
-.navbar-nav {
-    flex-direction: row;
-}
-
-.bg_grigino {
-    background-color: #ECECEC;
-}
-
+/* Commento centrale con virgolette */
 .testo {
     width: 40%;
     position: relative;
@@ -94,7 +97,6 @@ nav ul li {
     }
 }
 
-/* virgolette */
 .testo::before {
     position: absolute;
     content: open-quote;
@@ -113,6 +115,7 @@ nav ul li {
     right: 0%;
 }
 
+/* Icone */
 .icone {
     max-width: 40px;
     max-height: 40px;
@@ -136,6 +139,7 @@ nav ul li {
     top: 95%;
 }
 
+/* Bottone */
 .bottone {
     width: 120px;
     height: 30px;
@@ -150,13 +154,14 @@ nav ul li {
     left: 45%;
 }
 
+/* Timeline */
 .cerchio2 {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     border: 2px solid var(--prim-color);
     background-color: white;
-    left: -12px;
+    left: -9px;
     position: absolute;
 }
 
@@ -164,8 +169,34 @@ nav ul li {
     border-left: var(--prim-color) 2px solid;
 }
 
-
 .single {
     bottom: 0px;
     right: 0px;
+}
+
+/* Team */
+.cerchio3 {
+    width: 125px;
+    height: 125px;
+    border: 2px solid var(--prim-color);
+    background-position: center;
+    padding: 7px;
+}
+
+.piccolino {
+    font-size: small;
+}
+
+/* Benefit */
+.cerchio4 {
+    width: 250px;
+    height: 250px;
+    border: 2px solid var(--prim-color);
+    background-position: center;
+    padding: 7px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
 }
